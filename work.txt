@@ -1,0 +1,27 @@
+laravel project:
+> composer create-project --prefer-dist laravel/laravel todos
+> cd todos
+> php artisan serve
+
+addistional tools:
+https://nodejs.org/en/
+https://laragon.org/
+https://github.com/ozdamby/todos
+
+http://localhost/todos/public/
+
+git:
+echo "# todos" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ozdamby/todos.git
+git push -u origin master
+
+default page:
+resources/views/welcome.blade.php
+route:
+routes/web.php
+
+create controller:
+> php artisan make:controller PagesController
