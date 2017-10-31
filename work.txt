@@ -25,3 +25,16 @@ routes/web.php
 
 create controller:
 > php artisan make:controller PagesController
+
+Whoops error page after clon:
+> composer update
+> copy .env.example to .env
+> php artisan key:generate
+
+Database setup:
+in .env
+DB_ section
+
+php artisan make:model -m
+modify migration file in \database\migrations
+php artisan migrate
