@@ -51,6 +51,7 @@ add factory class file
 > php artisan make seeder TodosTableSeeder
 // factory(App\Todo::class, 7)->create();   // TodosTableSeeder
 //         $this->call(TodosTableSeeder::class);   // DatabaseSeeder
+( > composer dump-autoload : to generate new class map)
 > php artisan db:seed
 
 
