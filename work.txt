@@ -26,15 +26,31 @@ routes/web.php
 create controller:
 > php artisan make:controller PagesController
 
-Whoops error page after clon:
+* Whoops error page after clon:
 > composer update
 > copy .env.example to .env
 > php artisan key:generate
 
-Database setup:
+* Database setup:
 in .env
 DB_ section
 
 php artisan make:model -m
 modify migration file in \database\migrations
 php artisan migrate
+
+* make controller:
+php artisan make:controller TodosController
+
+* generate Fake data:
+\database\factories\
+- https://github.com/fzaninotto/Faker
+add factory class file
+
+- create seeder file
+> php artisan make seeder TodosTableSeeder
+// factory(App\Todo::class, 7)->create();   // TodosTableSeeder
+//         $this->call(TodosTableSeeder::class);   // DatabaseSeeder
+> php artisan db:seed
+
+

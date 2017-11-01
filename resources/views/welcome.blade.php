@@ -87,6 +87,8 @@
                     <a href="https://nodejs.org/en/">Node.js</a>
                     <a href="https://laragon.org/">Laragon</a>
                     <a href="https://github.com/ozdamby/todos">GitHub</a>
+                    <a href="http://localhost/phpmyadmin/db_structure.php?db=todos">phpmyadmin</a>
+
 
                 </div>
             </div>
