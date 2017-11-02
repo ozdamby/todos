@@ -54,4 +54,15 @@ add factory class file
 ( > composer dump-autoload : to generate new class map)
 > php artisan db:seed
 
+- tinker
+# php artisan tinker
+>>> $todos = App\Todo::all();
+>>> $todo = App\Todo::find(1);
+>>> $todo->todo = "change todo text";
+>>> $todo->save();
+>>> $todo->completed = 0;
+>>> $todo->save();
+>>> factory(App\Todo::class, 10)->create();
+>>> $todos = App\Todo::ca
+>>> $todo = App\Todo::find(10)->delete();
 
