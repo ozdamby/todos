@@ -10,12 +10,13 @@
         </div>
     </div>
 
-                    <?php foreach ($todos as $todo): ?>
-                        <--?php echo $todo ->todo; ?-->
-                    <?php endforeach; ?>
-
                     @foreach($todos as $todo)
-                        {{ $todo->todo}}
+                        {{ $todo->todo}} <a href="{{ route('todo.delete', ['id'=>$todo->id]) }}" class="btn btn-danger">x</a>
                         <hr>
                     @endforeach
+
+    <?php foreach ($todos as $todo): ?>
+    <--?php echo $todo ->todo; ?-->
+    <?php endforeach; ?>
+
 @stop
