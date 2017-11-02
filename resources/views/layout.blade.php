@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
@@ -46,7 +46,7 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 20px;
             }
 
             .links > a {
@@ -66,32 +66,12 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    @yield('content')
                 </div>
 
-                <div class="links">
-                    <a href="todos">Todo</a>
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://nodejs.org/en/">Node.js</a>
-                    <a href="https://laragon.org/">Laragon</a>
-                    <a href="https://github.com/ozdamby/todos">GitHub</a>
-                    <a href="http://localhost/phpmyadmin/db_structure.php?db=todos">phpmyadmin</a>
-
-
-                </div>
             </div>
         </div>
     </body>
